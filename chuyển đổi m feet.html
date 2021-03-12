@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p> Nhập m</p>
+    <input type="number" id="inputm" >
+    <button type="number" id="mtof" onclick="meterToFoot()"> Chuyển đổi </button>
+    <p id="result1"> =</p>
+    <p> Nhập feet</p>
+    <input type="number" id="inputf">
+    <button type="number" id="ftom" onclick="footToMeter()"> Chuyển đổi </button>
+    <p id="result2"> =</p>
+
+</body>
+<script>
+
+
+    function meterToFoot () {
+        let inputm = +document.getElementById("inputm").value;
+        document.getElementById("result1").innerHTML= "= " +0.305*inputm+ "f";
+    }
+    function footToMeter () {
+        let inputf = +document.getElementById("inputf").value;
+        document.getElementById("result2").innerHTML= "= "+ 3.279*inputf + "m";
+    }
+
+
+</script>
+</html>
